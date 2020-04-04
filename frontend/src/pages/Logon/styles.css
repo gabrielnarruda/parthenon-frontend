@@ -1,58 +1,94 @@
 .logon-container{
-    width:100%;
-    max-width: 1120px;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.logon-container .nav-header {
+.logon-container header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-    background: rgb(109, 68, 68);
-    height: 110px;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.1);
+    height: auto;
 }
 
-.logon-container .nav-header img {
+.logon-container header img {
     cursor: pointer;
+    width: 50px;
+    margin-left: 20px;
 }
 
-.logon-container .nav-header ul {
+.logon-container header nav{
+    align-items: center;
+    justify-content: center;
+}
+.logon-container header ul {
     list-style: none;
+    float: left;
 }
 
-.logon-container .nav-header li {
+.logon-container header li {
     display: inline-block;
-    padding: 0 20px;
+    line-height: 110px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
 }
 
-.logon-container .nav-header li a {
-    transition: all 0.3s ease 0s;
+.logon-container header li.separator{
+    border-left: 1px solid #FFF;
+    vertical-align: middle;
+    height: 20px;
+    padding: 0;
 }
-  
-.logon-container .nav-header li a:hover {
+
+.logon-container header li a {
+    text-decoration: none;
+    color: #FFF;
+    transition: opacity 0.2s;
+}
+
+.logon-container header li a:hover{
     color: #C9A261;
-    transition: all 0.3s ease 0s;
+}
+
+.logon-container div.logon-body{
+    align-items: center;
+    display:flex;
+}
+
+.logon-container div.logon-body img{
+    width: 25%;
+    height: 100vh;
+    margin-right: 200px;
+    margin-top: 0px;
+    margin-left: 150px;
+    padding-bottom: 30px;
+    padding-left: 30px;
 }
 
 .logon-container section.form{
-    width: 100%;
-    max-width: 350px;
-    margin-right: 30px;
-}
-
-.logon-container section.form form{
-    margin-top: 100px;
+    width: 30%;
+    margin-right: 100px;
+    margin-left: 100px;
+    float:right;
+    
 }
 
 .logon-container section.form form h1 {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 32px;
+    text-align: center;
+    font-weight: 400;
+    color:#FFF;
+}
+
+.logon-container section.form form p {
+    font-size:24px;
+    margin-bottom: 32px;
+    text-align: justify;
+    color:#FFF;
 }
 
 .logon-container section.form form a{
@@ -63,7 +99,6 @@
     font-size:18px;
     text-decoration: none;
     font-size: 18px;
-    text-decoration: none;
     font-weight: 500;
     transition: opacity 0.2s;
 }
@@ -74,4 +109,17 @@
 
 .logon-container section.form form a svg{
     margin-right:8px;
+}
+
+.logon-container footer {
+    background: rgba(255, 255, 255, 0.1);
+    height: 30px;
+}
+
+.logon-container footer p {
+    line-height: 30px;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    color: #C9A261;
 }

@@ -9,6 +9,7 @@ import api from '../../services/api';
 import './styles.css'
 
 import logoImg from '../../assets/logo.svg';
+import headerLogo from '../../assets/headerLogo.svg'
 import heroesImg from '../../assets/heroes.png';
 
 export default function Logon(){
@@ -36,6 +37,15 @@ export default function Logon(){
 
     return (
         <div className="logon-container">
+            <nav className="nav-header">
+                <img src={headerLogo} alt="Parthenon Logo"/>
+                <ul>
+                    <li><a href="http://google.com">Sobre</a></li>
+                    <li><a href="http://google.com">Contato</a></li>
+                    <li><a href="http://google.com">Login</a></li>
+                    <li><a href="http://google.com">Registre-se</a></li>
+                </ul>
+            </nav>
             <section className="form">
                 <img src={logoImg} alt="Be The Hero"/>
             

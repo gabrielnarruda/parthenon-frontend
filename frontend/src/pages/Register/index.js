@@ -13,8 +13,9 @@ import { Link , useHistory} from 'react-router-dom';
 export default function Register(){
 
     const [name, setName] = useState('');
+    const [institution, setInstitution] = useState('');
     const [email, setEmail] = useState('');
-    const [whatsapp, setWhatsapp] = useState('');
+    const [phone, setPhone] = useState('');
     const [city, setCity] = useState('');
     const [uf, setUf] = useState('');    
 
@@ -25,8 +26,9 @@ export default function Register(){
         
         const data={
             name,
+            institution,
             email,
-            whatsapp,
+            phone,
             city,
             uf,
         };
@@ -42,33 +44,35 @@ export default function Register(){
     }
     return (
         <div className="register-container">
-
             <div className="content">
                 <section>
                     <img src={logoImg} alt = "Be The Hero"/>
 
-                    <h1>Cadastro</h1>
-                    <p>Faça seu cadastro, entre na plataforma e ajuda pessoas a encontrarem os casos da sua ONG</p>
+                    <h1>Venha fazer parte da nossa comunidade científica</h1>
 
                     <Link className="back-link" to="/">
-                        <FiArrowLeft size={16} color="#E02041"/> 
+                        <FiArrowLeft size={16} color="#FFF"/> 
                         Já tenho cadastro 
                     </Link>
                 </section>
 
                 <form on onSubmit={handleRegister}>
 
-                <input placeholder="Nome da ONG"
+                <input placeholder="Nome completo"
                     value={name}
                     onChange={e=> setName(e.target.value)}/>
+
+                <input type="institution" placeholder="Instituição"
+                    value={institution}
+                    onChange={e=> setInstitution(e.target.value)}/>
 
                 <input type="email" placeholder="E-mail"
                     value={email}
                     onChange={e=> setEmail(e.target.value)}/>
 
-                <input placeholder="WhatsApp"
-                    value={whatsapp}
-                    onChange={e=> setWhatsapp(e.target.value)} />
+                <input placeholder="Telefone"
+                    value={phone}
+                    onChange={e=> setPhone(e.target.value)} />
 
                 <div className="input-group">
                     <input placeholder="Cidade"

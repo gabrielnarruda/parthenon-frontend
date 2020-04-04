@@ -9,6 +9,37 @@
     justify-content: space-between;
 }
 
+.logon-container .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background: rgb(109, 68, 68);
+    height: 110px;
+}
+
+.logon-container .nav-header img {
+    cursor: pointer;
+}
+
+.logon-container .nav-header ul {
+    list-style: none;
+}
+
+.logon-container .nav-header li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.logon-container .nav-header li a {
+    transition: all 0.3s ease 0s;
+}
+  
+.logon-container .nav-header li a:hover {
+    color: #C9A261;
+    transition: all 0.3s ease 0s;
+}
+
 .logon-container section.form{
     width: 100%;
     max-width: 350px;

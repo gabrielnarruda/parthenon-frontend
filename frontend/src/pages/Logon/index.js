@@ -49,7 +49,7 @@ export default function Logon() {
                         <li><a href="#">Contato</a></li>
                         <li><a href="#">Login</a></li>
                         <li className="separator"></li>
-                        <li><a href="#">Registre-se</a></li>
+                        <li><a href="#">Cadastre-se</a></li>
                     </ul>
                 </nav>
             </header>
@@ -71,6 +71,9 @@ export default function Logon() {
                     </form>
                 </section>
             </div>
+            <footer>
+                <p>2020 © Tekmor</p>
+            </footer>
         </div>
     );
 }

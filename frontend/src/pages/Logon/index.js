@@ -48,7 +48,8 @@ export default function Logon() {
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Contato</a></li>
                         <li><a href="#">Login</a></li>
-                        <li className="register"><a href="#">Registre-se</a></li>
+                        <li className="separator"></li>
+                        <li><a href="#">Registre-se</a></li>
                     </ul>
                 </nav>
             </header>

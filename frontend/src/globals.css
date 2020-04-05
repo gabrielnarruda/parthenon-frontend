@@ -20,7 +20,7 @@ input, button, textarea{
 form textarea {
     width: 100%;
     resize: vertical;
-    min-height: 140px;
+ 
     color: #333;
     border: 1px solid #dcdce6;
     border-radius: 8px;
@@ -58,7 +58,6 @@ form input{
     text-transform: uppercase;
     transition: filter 0.2s;
 }
-
 .button:hover{
     filter:brightness(90%)
 }

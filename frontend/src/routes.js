@@ -2,7 +2,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch} from 'react-router-dom'
 
-import Logon from './pages/Logon';
+import LandingPage from './pages/LandingPage';
 import Profile from './pages/Profile';
 import NewIncident from './pages/NewIncident'
 
@@ -13,7 +13,7 @@ export default function Routes(){
         <BrowserRouter>
             <Switch>
             
-                <Route path= "/" exact component={Logon}/>
+                <Route path= "/" exact component={LandingPage}/>
                 <Route path="/profile" component={Profile}/>
                 <Route path="/incidents/new" component={NewIncident}/>
                 

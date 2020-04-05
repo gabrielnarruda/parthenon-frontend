@@ -11,10 +11,12 @@ import './styles.css'
 import logoImg from '../../assets/logo.svg';
 import logoImgNoNameW from '../../assets/logo_noname_w.svg';
 import logoImgNoNameG from '../../assets/logo_noname_g.svg'
-import heroesImg from '../../assets/Logon/parthenon_logo.png';
 
+    /*
+        Landing Function
+    */
 
-export default function Logon() {
+export default function LandingPage() {
     const [id, setId] = useState('');
 
     const history = useHistory();
@@ -36,7 +38,10 @@ export default function Logon() {
         }
     }
 
-    {/* ----------------REGISTER---------------*/ }
+    /*
+        Register Function
+    */
+
     const [name, setName] = useState('');
     const [institution, setInstitution] = useState('');
     const [email, setEmail] = useState('');
@@ -65,55 +70,55 @@ export default function Logon() {
             alert(`Erro ao Realizar Cadastro, tente novamente`)
         }
     }
-    {/*---------------------------------------------- */ }
+
+    /*
+        Landing Section
+    */ 
 
     return (
-        <div className="logon-container">
-            <header>
-                <img src={logoImgNoNameW}
-                    onMouseOver={e => (e.currentTarget.src = logoImgNoNameG)}
-                    onMouseOut={e => (e.currentTarget.src = logoImgNoNameW)}
-                    alt="Parthenon Community"
-                />
-                <nav className="buttonNav">
-                    <ul className="headerButtonList">
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><a href="#">Login</a></li>
-                        <li className="separator"></li>
-                        <li><a href="#">Cadastre-se</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div className="logon-body">
+        <div id="full-page">
+            <section id="landing-section">
+                <header>
+                    <img src={logoImgNoNameW}
+                        onMouseOver={e => (e.currentTarget.src = logoImgNoNameG)}
+                        onMouseOut={e => (e.currentTarget.src = logoImgNoNameW)}
+                        alt="Parthenon Community"
+                    />
+                    <nav className="buttonNav">
+                        <ul className="headerButtonList">
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li className="separator"></li>
+                            <li><a href="#register-section">Cadastre-se</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div className="landing-body">
 
-                <img src={logoImg} alt="Heroes" />
+                    <img src={logoImg} alt="Parthenon Logo" />
 
-                <section className="form">
+                    <section className="landing-tbox">
 
-                    <form onSubmit={handleLogin}>
-                        <h1>Venha fazer parte da nossa comunidade científica</h1>
-                        <p style={{}}>
-                            Organize seus arquivos e trabalhos científicos, junte-se a outros cientistas e aproveite os benefícios das nossas ferramentas.
-                        </p>
+                        <form onSubmit={handleLogin}>
+                            <h1>Venha fazer parte da nossa comunidade científica</h1>
+                            <p>
+                                Organize seus arquivos e trabalhos científicos, junte-se a outros cientistas e aproveite os benefícios das nossas ferramentas.
+                            </p>
 
-                        <Link className="back-link" to="register" style={{ color: "#FFF" }}>
-                            <button className="button" type="submit">Cadastre-se</button>
-                        </Link>
-                    </form>
-                </section>
-            </div>
+                            <Link className="back-link" to="register" style={{ color: "#FFF" }}>
+                                <button className="button" type="submit">Cadastre-se</button>
+                            </Link>
+                        </form>
+                    </section>
+                </div>
+            </section>
 
+        {/*
+            Register Section
+        */}
 
-
-
-            {/*--------------------------REGISTER---------------------------------------*/}
-
-
-
-
-
-            <section className="register-section" >
+            <section id="register-section" >
                 <div className="register-container">
                     <div className="content">
                         <section>
@@ -123,11 +128,11 @@ export default function Logon() {
 
                             <Link className="back-link" to="/" style={{ color: "#C9A261" }} >
                                 <FiArrowLeft size={16} />
-                        Já tenho cadastro
-                    </Link>
+                                Já tenho cadastro
+                            </Link>
                         </section>
 
-                        <form className ="formRegister" onSubmit={handleRegister}>
+                        <form className ="form-register" onSubmit={handleRegister}>
 
                             <input placeholder="Nome completo"
                                 value={name}
@@ -161,7 +166,6 @@ export default function Logon() {
                     </div>
                 </div>
             </section>
-
 
             <footer>
                 <p>2020 © Tekmor</p>

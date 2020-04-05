@@ -1,0 +1,177 @@
+/*
+
+    Landing Section
+
+*/
+
+#landing-section{
+    width: 100%;
+    height: 100vh;
+}
+
+#landing-section header {
+    padding: 0 18%;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.1);
+    height: auto;
+}
+
+#landing-section header img {
+    cursor: pointer;
+    width: 50px;
+    margin-left: 20px;
+}
+
+#landing-section header nav{
+    align-items: center;
+    justify-content: center;
+}
+
+#landing-section header ul {
+    list-style: none;
+    float: left;
+}
+
+#landing-section header li {
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+}
+
+#landing-section header li.separator{
+    border-left: 1px solid #FFF;
+    vertical-align: middle;
+    height: 20px;
+    padding: 0;
+}
+
+#landing-section header li a {
+    text-decoration: none;
+    color: #FFF;
+    transition: opacity 0.2s;
+}
+
+#landing-section header li a:hover{
+    color: #C9A261;
+}
+
+#landing-section .landing-body{
+    height: 100vh;
+    padding: 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* #landing-section .landing-body img {
+
+} */
+
+#landing-section .landing-tbox {
+    width: 40%;
+}
+
+#landing-section .landing-tbox form h1 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 22px;
+    color:#FFF;
+}
+
+#landing-section .landing-tbox form p {
+    font-size: 18px;
+    margin-bottom: 22px;
+    text-align: justify;
+    color:#FFF;
+}
+
+#landing-section .landing-tbox form a {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color:#41414d;
+    font-size:18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+#landing-section .landing-tbox form a:hover {
+    opacity: 0.8;
+}
+
+#full-page footer {
+    background: rgba(255, 255, 255, 0.1);
+    height: 30px;
+}
+
+#full-page footer p {
+    line-height: 30px;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    color: #C9A261;
+}
+
+/*
+
+    Register Section
+
+*/
+
+#register-section .register-container .content{
+    width: 100%;
+    height: 100vh;
+    padding: 0 20%;
+    background: #f0f0f5;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#register-section .register-container .content section {
+    width: 100%;
+    max-width: 380px;
+}
+
+#register-section .register-container .content section h1{
+    margin: 64px 0 32px;
+    text-align: center;
+    color: #C9A261;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+#register-section .register-container .content section p {
+    font-size: 18px;
+    color: #C9A261;
+    text-align: justify;
+}
+
+#register-section .register-container .content form.form-register {
+    width: 100%;
+    max-width: 450px;
+}
+
+#register-section .register-container .content form input {
+    margin-top: 18px;
+}
+
+#register-section .register-container .content form input .placeholder {
+    color: red;
+}
+
+#register-section .register-container .content form .input-group {
+    display: flex;
+}
+
+#register-section .register-container .content form .input-group input + input {
+    margin-left: 8px;
+}

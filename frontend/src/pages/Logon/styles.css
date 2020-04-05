@@ -125,7 +125,6 @@
     width: 100%;
     padding:0;
     background: #f0f0f5;
-    box-shadow: 0 0 100px rgba(0,0,0,0.1);
     border-radius: 8px;
 
     display: flex;
@@ -150,11 +149,13 @@
     font-size: 18px;
     color: #C9A261;
     text-align: justify;
+
 }
 
 .register-container .content form.formRegister {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
+    margin-left: 40px;
 }
 
 .register-container .content form input {

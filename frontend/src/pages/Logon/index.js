@@ -119,10 +119,10 @@ export default function Logon() {
                         <section>
                             <h1>Venha fazer parte da nossa comunidade científica</h1>
                             <p>Como um usuário premium, você poderá baixar licenças que permitem usar todos os recursos incluídos no Freepik Selection sem atribuição. Além disso, seu limite de downloads será alterado de 10 para 100 por dia. Como usuário Premium, você também terá acesso ao nosso novo conteúdo exclusivo para assinantes.</p>
-                            <p>Como Usuário Premium, você também terá acesso ao nosso novo Conteúdo Premium. Esse estoque de imagens contém designs exclusivos que só poderão ser baixados por Usuários Premium.</p>
+                            
 
-                            <Link className="back-link" to="/">
-                                <FiArrowLeft size={16} color="#FFF" />
+                            <Link className="back-link" to="/" style={{ color: "#C9A261" }} >
+                                <FiArrowLeft size={16} />
                         Já tenho cadastro
                     </Link>
                         </section>

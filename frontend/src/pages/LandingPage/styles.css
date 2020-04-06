@@ -14,8 +14,12 @@
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(98, 49, 49);
     height: auto;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #landing-section header img {
@@ -162,10 +166,6 @@
 
 #register-section .register-container .content form input {
     margin-top: 18px;
-}
-
-#register-section .register-container .content form input .placeholder {
-    color: red;
 }
 
 #register-section .register-container .content form .input-group {
